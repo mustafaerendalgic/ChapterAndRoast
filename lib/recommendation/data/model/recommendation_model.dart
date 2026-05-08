@@ -1,0 +1,11 @@
+import 'package:gdg_campus_coffee/recommendation/domain/entity/recommendation.dart';
+
+class RecommendationModel {
+  final String? answer;
+
+  RecommendationModel({this.answer});
+
+  Recommendation toEntity() {
+    return Recommendation(answer: answer);
+  }
+}
