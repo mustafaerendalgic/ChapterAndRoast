@@ -1,37 +1,72 @@
-# Chapter & Roast (GDG Campus Coffee) ☕✨
+# Chapter & Roast ☕📖
 
-A premium Flutter application built for the **GDG Campus Coffee** community. This app combines modern aesthetics with powerful features like the **Grounds Oracle** (AI-powered fortune telling) and a high-fidelity **Caffè & Codex** menu.
+A premium Flutter app that blends the world of coffee and literature — curated brews, nearby café discovery, and an AI-powered sommelier to guide every cup.
 
----
-
-## 🌟 Features
-
-- **Grounds Oracle**: Mystical AI-powered coffee fortunes using Gemini 1.5 Flash.
-- **Dynamic Menu**: A beautiful, responsive menu with smooth animations and high-fidelity visuals.
-- **Branch Locator**: Find your nearest coffee branch with integrated maps.
-- **Premium UI**: Crafted with a focus on aesthetics, using custom typography and rich gradients.
+Built as part of the **GDG Build With AI** hackathon (May 2025, Adana).
 
 ---
 
-## 🚀 Getting Started
+## Screenshots
 
-To get this project running locally, follow these steps:
+| | |
+|:---:|:---:|
+| ![image1](https://github.com/user-attachments/assets/6e034a2b-a8d3-4099-9727-d5ac45eb3a68) | ![image2](https://github.com/user-attachments/assets/530fb2bc-caf4-4b7d-9a5c-ab5ddc326918) |
 
-### 1. Prerequisites
-- Flutter SDK (latest stable version)
-- Android Studio / VS Code
-- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+---
 
-### 2. Configure Secrets
-We use a centralized secrets management system to keep API keys secure.
-- Copy `lib/core/constants/secrets.dart.example` to `lib/core/constants/secrets.dart` and add your **Gemini API Key**.
-- Copy `android/secrets.properties.example` to `android/secrets.properties` and add your **Google Maps API Key**.
+## Features
 
-### 3. Setup Firebase
-- Place your `google-services.json` in `android/app/`.
-- Place your `GoogleService-Info.plist` in `ios/Runner/`.
+- **Curated Menu** — Coffee catalog with flavor profiles, intensity tags, and pricing
+- **Café Map** — Discover nearby roasteries and branches with integrated Google Maps
+- **AI Brew Assistant** — Powered by Gemini; recommends the perfect brew for your mood, book, or moment
+- **Premium UI** — Dark luxury aesthetic with custom typography and smooth animations
 
-### 4. Run the App
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Flutter (Dart) |
+| State Management | Provider |
+| AI | Google Generative AI (Gemini 1.5 Flash) |
+| Database | Firebase Firestore & Storage |
+| Maps | Google Maps Flutter |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter SDK (latest stable)
+- Android Studio or VS Code
+- A Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+- A Google Maps API key
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/mustafaerendalgic/ChapterAndRoast.git
+cd ChapterAndRoast
+```
+
+### 2. Configure API keys
+
+Copy the example secrets files and fill in your keys:
+
+```bash
+cp lib/core/constants/secrets.dart.example lib/core/constants/secrets.dart
+cp android/secrets.properties.example android/secrets.properties
+```
+
+### 3. Set up Firebase
+
+- Place `google-services.json` in `android/app/`
+- Place `GoogleService-Info.plist` in `ios/Runner/`
+
+### 4. Run
+
 ```bash
 flutter pub get
 flutter run
@@ -39,14 +74,13 @@ flutter run
 
 ---
 
-## 🛠 Tech Stack
-- **Framework**: Flutter
-- **State Management**: Provider
-- **AI**: Google Generative AI (Gemini)
-- **Database**: Firebase Firestore & Storage
-- **Maps**: Google Maps Flutter
+## Built At
+
+**GDG Build With AI** — May 9–10, 2025, Adana  
+Developed with the support of AI tools including Google Stitch and Antigravity.
 
 ---
 
-## 📝 License
-This project is for educational purposes as part of the GDG Campus Coffee initiative.
+## License
+
+This project was created for educational purposes as part of the GDG Campus Coffee initiative.
