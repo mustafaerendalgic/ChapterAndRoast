@@ -29,7 +29,7 @@ Built as part of the **GDG Build With AI** (May 2026, Adana).
 |---|---|
 | Framework | Flutter (Dart) |
 | State Management | Provider |
-| AI | Google Generative AI (Gemini 1.5 Flash) |
+| AI | Google Generative AI (Gemini 3 Flash) |
 | Database | Firebase Firestore & Storage |
 | Maps | Google Maps Flutter |
 
@@ -76,7 +76,7 @@ flutter run
 
 ## Built At
 
-**GDG Build With AI** — May 9–10, 2025, Adana  
+**GDG Build With AI** — May 9–10, 2026, Adana  
 Developed with the support of AI tools including Google Stitch and Antigravity.
 
 ---
