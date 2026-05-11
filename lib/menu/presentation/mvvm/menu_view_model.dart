@@ -6,13 +6,25 @@ class MenuViewModel extends ChangeNotifier {
   final _getProductsUseCase = GetProductsUseCase();
 
   bool loading = false;
-  List<Product> products = [];
+  List<Product> featuredProducts = [];
+  List<Product> archiveProducts = [];
+
+  MenuViewModel() {
+    fetchProducts();
+  }
 
   Future<void> fetchProducts() async {
     loading = true;
     notifyListeners();
 
-    products = await _getProductsUseCase();
+    try {
+      final allProducts = await _getProductsUseCase();
+      featuredProducts = allProducts.where((p) => p.isFeatured).toList();
+      archiveProducts = allProducts.where((p) => !p.isFeatured).toList();
+    } catch (e) {
+      featuredProducts = [];
+      archiveProducts = [];
+    }
 
     loading = false;
     notifyListeners();

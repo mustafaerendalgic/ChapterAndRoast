@@ -1,5 +1,7 @@
 class Recommendation {
-  String? answer;
+  final String? question;
+  final String? answer;
+  final DateTime? createdAt;
 
-  Recommendation({this.answer});
+  Recommendation({this.question, this.answer, this.createdAt});
 }

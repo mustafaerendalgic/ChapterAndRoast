@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gdg_campus_coffee/core/theme/app_theme.dart';
 import 'package:gdg_campus_coffee/home_screen.dart';
 
 class App extends StatelessWidget {
@@ -7,8 +8,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Campus Coffee',
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
+      debugShowCheckedModeBanner: false,
+      title: 'Caffè & Codex',
+      theme: AppTheme.theme,
       home: const HomeScreen(),
     );
   }

@@ -8,11 +8,19 @@ class MarketViewModel extends ChangeNotifier {
   bool loading = false;
   List<CatalogProduct> catalogProducts = [];
 
+  MarketViewModel() {
+    fetchCatalogProducts();
+  }
+
   Future<void> fetchCatalogProducts() async {
     loading = true;
     notifyListeners();
 
-    catalogProducts = await _getCatalogProductsUseCase();
+    try {
+      catalogProducts = await _getCatalogProductsUseCase();
+    } catch (e) {
+      catalogProducts = [];
+    }
 
     loading = false;
     notifyListeners();
