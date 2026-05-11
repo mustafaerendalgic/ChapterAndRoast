@@ -2,7 +2,7 @@
 
 A premium Flutter app that blends the world of coffee and literature — curated brews, nearby café discovery, and an AI-powered sommelier to guide every cup.
 
-Built as part of the **GDG Build With AI** hackathon (May 2025, Adana).
+Built as part of the **GDG Build With AI** (May 2025, Adana).
 
 ---
 
